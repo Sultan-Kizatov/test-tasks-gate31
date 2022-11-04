@@ -1,0 +1,115 @@
+body {
+    background: #cacaca;
+}
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+.wrapper {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.filter {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 30%;
+}
+.input {
+    width: 71%;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 1px;
+    box-shadow: inset #ebab00 0 -1px 1px, inset 0 1px 1px #ffbf00, #cc7722 0 0 0 1px, #000 0 10px 15px -10px;
+    border: none;
+    outline: none;
+}
+.search {
+    width: 92px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+    color: #000;
+    text-shadow: 0 -1px 1px #cc5500;
+    user-select: none;
+    outline: none;
+    border-radius: 1px;
+    background: linear-gradient(to left, rgba(0,0,0,.3), rgba(0,0,0,.0) 50%, rgba(0,0,0,.3)), linear-gradient(#d77d31, #fe8417, #d77d31);
+    background-size: 100% 100%, auto;
+    background-position: 50% 50%;
+    box-shadow: inset #ebab00 0 -1px 1px, inset 0 1px 1px #ffbf00, #cc7722 0 0 0 1px, #000 0 10px 15px -10px;
+    transition: 0.2s;
+    border: none;
+}
+.search:hover {
+    background-size: 140% 100%, auto;
+    color: #fff;
+    transition: all 0.2s;
+}
+.search:active {
+    top: 1px;
+    box-shadow: inset #ebab00 0 -1px 1px, inset 0 1px 1px #ffbf00, #cc7722 0 0 0 1px, 0 10px 10px -9px #000;
+}
+.block {
+    margin: 0 auto;
+    margin-top: 15px;
+    box-sizing: border-box;
+    padding: 15px 5px;
+    min-height: 100px;
+    width: 300px;
+    background: #ffffff;
+    border: 1px dashed #000;
+    border-radius: 8px;
+    transition: all 0.5s;
+}
+.title {
+    margin: 0;
+    font-size: 18px;
+    transition: all 0.5s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.descr {
+    margin-top: 15px;
+    transition: all 0.5s;
+}
+.check {
+    display: block;
+    margin-top: 15px;
+    width: 20px;
+    height: 22px;
+    cursor: pointer;
+}
+.bg {
+    background: linear-gradient(to left, rgba(0,0,0,.3), rgba(0,0,0,.0) 50%, rgba(0,0,0,.3)), linear-gradient(#d77d31, #fe8417, #d77d31);
+    box-shadow: inset #ebab00 0 -1px 1px, inset 0 1px 1px #ffbf00, #cc7722 0 0 0 1px, #000 0 10px 15px -10px;
+    border: 1px dashed #fff;
+    transition: all 0.5s;
+}
+.color {
+    color: #fff;
+    transition: all 0.5s;
+}
+
+@media screen and (max-width: 767.98px) {
+    .filter {
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+    }
+    .input {
+        width: 100%;
+    }
+    .search {
+        margin-top: 10px;
+    }
+}
